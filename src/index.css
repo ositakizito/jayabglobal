@@ -1,13 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tangerine:wght@700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: var(--whitegray);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --backgound: #5078f0;
+  --whitegray: #f0f0f0;
+  --fff: #fff;
+  --darkblue: #4c73d9;
+  --dark: #101010;
+}
+
+header {
+  background-color: var(--backgound);
+  border-bottom: 1px solid var(--backgound);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .jay {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 65px;
+}
+
+header .jay .jay1 {
+  color: var(--fff);
+  font-size: 150%;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+header .jay .jay1 .glo {
+  color: var(--dark);
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+header .jay .jay2 button {
+  padding: 12px 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #4c73d9;
+  color: var(--fff);
+}
+
+header .jay .jay3 {
+  position: absolute;
+  width: 90%;
+  top: 66px;
+  left: 0;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: var(--fff);
+}
+
+header .jay .jay3 .link {
+  text-decoration: none;
+  color: gray;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--fff);
+}
+
+header .jay .jay3 .jaymenu {
+  display: flex;
+  color: gray;
+  flex-direction: column;
+  margin: 5px;
+
+}
+
+header .jay .jay3 .jaymenu .jaymenu1 {
+  margin: 5px;
+  border: 2px solid var(--whitegray);
+  outline: none;
+  padding-left: 5px;
+  text-align: left;
+}
+
+section.sec {
+  background-color: var(--backgound);
+  padding: 10px;
+  color: var(--fff);
+}
+
+section.sec .jayhome {
+  display: flex;
+  flex-direction: column;
+}
+
+section.sec .jayhome .jayhome1 {
+  font-size: 250%;
+  margin: 15px 0;
+  font-weight: 900;
+}
+
+section.sec .jayhome .jayhome2 {
+  font-size: 200%;
+  line-height: 40px;
+  margin: 8px 0;
+}
+
+section.sec .jayhome .jayhome3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+section.sec .jayhome .jaybtn {
+  padding: 15px 5px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid var(--fff);
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: var(--fff);
+  background-color: unset;
+}
+
+section.sec1 {
+  padding: 10px;
+}
+
+section.sec1 .jayabout {
+  display: flex;
+  flex-direction: column;
+
+}
+
+section.sec1 .jayabout img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+section.sec1 .jayabout1 {
+  padding: 15px 0;
+  color: var(--darkblue);
+  font-weight: 800;
+}
+
+section.sec1 .jayabout2 {
+  padding: 15px 0;
+  font-size: 150%;
+}
+
+section.sec1 .jayabout3 {
+  padding: 15px 0;
+  font-size: 18px;
+  overflow: hidden;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+section.sec1 .jayabout button.jaybtn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 40%;
+  outline: none;
+  background-color: #4c73d9;
+  color: var(--fff);
+}
+
+section.sec2 {
+  padding: 10px;
+
+}
+
+section.sec2 .con {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  margin: 10px 0;
+  font-size: 150%;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
+section.sec1 .con {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  margin: 10px 0;
+  font-size: 150%;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
+section.sec2 .jaycontact {
+  display: flex;
+  margin-bottom: 10px;
+  line-height: 40px;
+  background-color: var(--fff);
+}
+
+section.sec2 .jaycontact .jayicon img {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 7px;
+  height: 80px;
+  width: 80px;
+}
+
+section.sec2 .jaycontact .jaystreet {
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+section.sec2 .jaycontact .jaystreet .jaynum {
+  justify-content: center;
+  text-align: left;
+
+}
+
+section.sec2 .jaycontact .jaystreet .jaynum.loc {
+  font-size: 150%;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--fff);
+  border-top-right-radius: 80px;
+  width: 100%;
+
+}
+
+footer .jayfooter {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+footer .jayfooter .footerimg {
+  margin-top: 20px;
+  padding: 10px 0;
+
+}
+
+footer .jayfooter .footerimg img {
+  width: 50%;
+}
+
+footer .jayfooter .footerjay {
+
+  padding: 8px 0;
+}
+
+footer .jayfooter .footers {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+
+}
+
+footer .jayfooter .footers button {
+  border: none;
+  outline: none;
+  background-color: var(--backgound);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 7px;
+  margin-left: 0;
+}
+
+footer .jayfooter .footers button i {
+  padding: 6px 8px;
+  margin: 5px;
+  font-size: 25px;
+  color: var(--fff);
+
+}
+
+footer .jayfooter .footerquick {
+  padding: 10px 0;
+}
+
+footer .jayfooter .footerquick .footQ {
+  font-size: 150%;
+}
+
+footer .jayfooter .line {
+  width: 50px;
+  position: relative;
+  margin: 5px 0;
+  height: 5px;
+  background-color: var(--darkblue);
+}
+
+footer .jayfooter .footQ {
+  font-size: 150%;
+}
+
+footer .jayfooter .footerquickf .footerlink {
+  padding: 8px 0;
+}
+
+footer .jayfooter .footerquick .footerlink .foot1 {
+  line-height: 50px;
+  font-size: 18px;
+}
+
+footer .jayfooter .footerservice {
+  padding: 10px 0;
+}
+
+footer .jayfooter .footerservice .footservice {
+  font-size: 150%;
+}
+
+footer .jayfooter .footerservice .footery {
+  line-height: 40px;
+  padding: 10px 0;
+}
+
+footer .jayfooter .footerservice .footery .fot {
+  font-size: 18px
+}
+
+footer .footcopy {
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  line-height: 30px;
+  background-color: var(--backgound);
+  font-size: 14px;
+}
+
+footer .footery form {
+  display: flex;
+  margin: 5px 0;
+}
+
+footer .footery form input {
+  width: 60%;
+  outline: none;
+  padding: 10px 8px;
+}
+
+footer .footery form button {
+  width: 30%;
+  padding: 10px 8px;
+  background-color: var(--backgound);
+  color: var(--fff);
+  border: none;
+  margin-left: 8px;
+}
+
+footer .footery form button i {
+  font-size: 20px;
+
+}
+
+section.faq {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.faq .faq1 {
+  font-size: 150%;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+  color: var(--darkblue);
+  font-weight: 900;
+}
+
+section.faq .fask {
+  margin: 5px 0;
+}
+
+section.faq .faq2 {
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  background-color: var(--fff);
+}
+
+section.faq .faq3 {
+  margin-left: 10px;
+}
+
+section.faq button.faq4 {
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: unset;
+}
+
+section.faq .faq4 i {
+  margin-right: 10px;
+}
+
+section.faq .faq5 {
+  background-color: var(--fff);
+  margin-top: 5px;
+  padding: 10px;
+  text-align: left;
 }
